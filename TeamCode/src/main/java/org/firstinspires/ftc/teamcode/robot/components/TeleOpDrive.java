@@ -12,10 +12,10 @@ public class TeleOpDrive {
 
 
         //Initialize motors
-        leftFront = hardwareMap.get(DcMotorEx.class, "Front Left Motor");
-        rightFront = hardwareMap.get(DcMotorEx.class, "Front Right Motor");
-        leftBack = hardwareMap.get(DcMotorEx.class, "Back Left Motor");
-        rightBack = hardwareMap.get(DcMotorEx.class, "Back Right Motor");
+        leftFront = hardwareMap.get(DcMotorEx.class, "Top-Left-Motor");
+        rightFront = hardwareMap.get(DcMotorEx.class, "Top-Right-Motor");
+        leftBack = hardwareMap.get(DcMotorEx.class, "Bottom-Left-Motor");
+        rightBack = hardwareMap.get(DcMotorEx.class, "Bottom-Right-Motor");
 
         rightFront.setDirection(DcMotor.Direction.REVERSE);
         rightBack.setDirection(DcMotor.Direction.REVERSE);
