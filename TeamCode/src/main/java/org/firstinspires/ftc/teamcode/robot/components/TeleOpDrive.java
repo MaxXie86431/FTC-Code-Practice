@@ -7,15 +7,15 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 public class TeleOpDrive {
 
     private final DcMotor leftFront, rightFront, leftBack, rightBack;
+    private HardwareMap hwMap;
 
     public TeleOpDrive(HardwareMap hardwareMap) {
-
-
         //Initialize motors
-        leftFront = hardwareMap.get(DcMotorEx.class, "Top-Left-Motor");
-        rightFront = hardwareMap.get(DcMotorEx.class, "Top-Right-Motor");
-        leftBack = hardwareMap.get(DcMotorEx.class, "Bottom-Left-Motor");
-        rightBack = hardwareMap.get(DcMotorEx.class, "Bottom-Right-Motor");
+        hwMap = hardwareMap;
+        rightFront = hwMap.get(DcMotor.class, "Top-Right-Motor");
+        leftBack = hwMap.get(DcMotor.class, "Bottom-Left-Motor");
+        rightBack = hwMap.get(DcMotor.class, "Bottom-Right-Motor");
+        leftFront = hwMap.get(DcMotor.class, "Top-Left-Motor");
 
         rightFront.setDirection(DcMotor.Direction.REVERSE);
         rightBack.setDirection(DcMotor.Direction.REVERSE);
