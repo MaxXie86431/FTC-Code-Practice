@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['blue_block', 'red_block', 'yellow_block']
+
+roboflow:
+  workspace: ftc-into-the-deep
+  project: into-the-deep-wycvc
+  version: 1
+  license: Public Domain
+  url: https://universe.roboflow.com/ftc-into-the-deep/into-the-deep-wycvc/dataset/1

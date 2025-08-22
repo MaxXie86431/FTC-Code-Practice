@@ -1,0 +1,24 @@
+description: Ultralytics YOLO11n model trained on TeamCode/src/main/java/org/firstinspires/ftc/teamcode/autonomous/Sample_Detection/Into
+  The Deep.v1i.yolov11/data.yaml
+author: Ultralytics
+date: '2025-08-21T17:38:46.159412'
+version: 8.3.182
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 512
+- 512
+names:
+  0: blue_block
+  1: red_block
+  2: yellow_block
+args:
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  nms: true
+channels: 3
